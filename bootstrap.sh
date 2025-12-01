@@ -6,6 +6,12 @@ sudo apt install vsftpd -y
 sudo apt install dos2unix -y
 sudo apt install nginx -y
 sudo apt install git -y
+sudo apt install ufw -y
+
+sudo ufw allow ssh
+sudo ufw allow 'Nginx Full'
+sudo ufw delete allow 'Nginx HTTP'
+sudo ufw --force enable
 
 sudo mkdir -p /var/www/paco.test/html
 

@@ -1,9 +1,18 @@
 server { 
         listen 80;
-        listen [::]:80;
+        listen 443 ssl;
+
+        server_name paco.test www.paco.test;
+
         root /var/www/paco.test/html;
         index index.html index.htm index.nginx-debian.html;
-        server_name paco.test;
+        
+        ssl_certificate /etc/ssl/certs/paco.test.crt;
+        ssl_certificate_key /etc/ssl/private/paco.test.key;
+
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_ciphers HIGH:!aNULL:!MD5;
+        
         location / {
                 satisfy all;
                 auth_basic "Área restringida";

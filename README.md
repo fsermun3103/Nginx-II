@@ -47,4 +47,27 @@
 ## Y además comprueba que tengas una ip válida
 ![paco.test final](/doc/paco.test-final.png)
 
-#### Ahora me salta la validación en la página principal y funciona correctamente
+#### Ahora me salta la validación en la página principal y funciona correctamente.
+
+# Project Name
+### Nginx-III
+
+## Añado al server_name www.paco.test
+![www.paco.test](/doc/www.paco.test.png)
+
+## Cambio el archivo hosts de mi ordenador para que me funcione www.paco.test
+![Cambio hosts](/doc/hosts.png)
+
+## Instalo y configuro el cortafuegos ufw
+![Cortafuegos](/doc/cortafuegos.png)
+
+## Genero el certificado SSL autofirmado
+![Certificado SSL](/doc/certificado-SSL.png)
+
+## Ajusto el archivo paco.test para que funcione con el ssl
+![Ajuestes paco.test](/doc/ajuste-paco.test-certificado-ssl.png)
+
+## Prueba de la página con https://paco.test y https://www.paco.test
+![Prueba](/doc/prueba.png)
+
+#### La seguridad sale en rojo por que el certificado es autofirmado, y por eso dice que la conexión no es segura
