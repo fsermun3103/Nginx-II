@@ -1,0 +1,13 @@
+acl confiables {
+    192.168.56.0/24;
+};
+
+options {
+    directory "/var/cache/bind";
+    allow-transfer { none; };
+    listen-on { 192.168.56.101; };
+    listen-on-v6 { any; };
+    allow-query { any; };
+    recursion yes;
+    allow-recursion { confiables; };
+};
