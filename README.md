@@ -45,6 +45,6 @@
 
 ## Configuración final de paco.test para que salte la autenticación en la página principal
 ## Y además comprueba que tengas una ip válida
-![paco.test final](/doc/paco.test final.png)
+![paco.test final](/doc/paco.test-final.png)
 
 #### Ahora me salta la validación en la página principal y funciona correctamente
